@@ -1,0 +1,26 @@
+[
+  {
+    "pattern": "Graphs",
+    "title": "Find if Path Exists in Graph",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+    "platform": "LeetCode",
+    "sequence": 11
+  },
+  {
+    "pattern": "Graphs",
+    "title": "Number of Provinces",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/number-of-provinces/",
+    "platform": "LeetCode",
+    "sequence": 11
+  },
+  {
+    "pattern": "Graphs",
+    "title": "Minimum Number of Vertices to Reach All Nodes",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/",
+    "platform": "LeetCode",
+    "sequence": 11
+  }
+]

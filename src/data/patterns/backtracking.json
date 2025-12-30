@@ -1,0 +1,66 @@
+[
+  {
+    "pattern": "Backtracking",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/combination-sum/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/combination-sum-ii/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/combination-sum-iii/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/word-search/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/word-search-ii/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Sudoku Solver",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/sudoku-solver/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Factor Combinations",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/factor-combinations/",
+    "platform": "LeetCode",
+    "sequence": 21
+  },
+  {
+    "pattern": "Backtracking",
+    "title": "Split a String Into the Max Number of Unique Substrings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/",
+    "platform": "LeetCode",
+    "sequence": 21
+  }
+]

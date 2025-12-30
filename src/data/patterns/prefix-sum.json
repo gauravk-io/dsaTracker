@@ -1,0 +1,50 @@
+[
+  {
+    "pattern": "Prefix Sum",
+    "title": "Subarray Sum Equals K",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/subarray-sum-equals-k/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  },
+  {
+    "pattern": "Prefix Sum",
+    "title": "Find Pivot Index",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/find-pivot-index/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  },
+  {
+    "pattern": "Prefix Sum",
+    "title": "Subarray Sums Divisible By K (Med)",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  },
+  {
+    "pattern": "Prefix Sum",
+    "title": "Contiguous array (MED)",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/contiguous-array/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  },
+  {
+    "pattern": "Prefix Sum",
+    "title": "Problem challenge: Shortest Subarray With Sum at Least K",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  },
+  {
+    "pattern": "Prefix Sum",
+    "title": "Problem challenge: Count Range Sum",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/count-of-range-sum/description/",
+    "platform": "LeetCode",
+    "sequence": 3.2
+  }
+]

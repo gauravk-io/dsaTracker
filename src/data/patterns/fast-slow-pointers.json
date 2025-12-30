@@ -1,0 +1,66 @@
+[
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "LinkedList Cycle",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/linked-list-cycle/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Start of LinkedList Cycle",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Happy Number",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/happy-number/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Find the Duplicate Number",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/find-the-duplicate-number/description/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Middle of the LinkedList",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Problem Challenge 1: Palindrome LinkedList",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/palindrome-linked-list/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Problem Challenge 2: Rearrange a LinkedList",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/reorder-list/",
+    "platform": "LeetCode",
+    "sequence": 2
+  },
+  {
+    "pattern": "Fast & Slow pointers",
+    "title": "Problem Challenge 3: Cycle in a Circular Array",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/circular-array-loop/",
+    "platform": "LeetCode",
+    "sequence": 2
+  }
+]

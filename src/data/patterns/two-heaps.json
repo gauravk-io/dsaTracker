@@ -1,0 +1,34 @@
+[
+  {
+    "pattern": "Two Heaps",
+    "title": "Find the Median of a Number Stream",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "platform": "LeetCode",
+    "sequence": 13
+  },
+  {
+    "pattern": "Two Heaps",
+    "title": "Sliding Window Median",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/sliding-window-median/",
+    "platform": "LeetCode",
+    "sequence": 13
+  },
+  {
+    "pattern": "Two Heaps",
+    "title": "Maximize Capital",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/ipo/",
+    "platform": "LeetCode",
+    "sequence": 13
+  },
+  {
+    "pattern": "Two Heaps",
+    "title": "*Maximum Sum Combinations",
+    "difficulty": "Medium",
+    "url": "https://www.interviewbit.com/problems/maximum-sum-combinations/",
+    "platform": "Other",
+    "sequence": 13
+  }
+]

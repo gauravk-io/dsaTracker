@@ -1,0 +1,66 @@
+[
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Cyclic Sort",
+    "difficulty": "Easy",
+    "url": "https://www.geeksforgeeks.org/sort-an-array-which-contain-1-to-n-values-in-on-using-cycle-sort/",
+    "platform": "GeeksforGeeks",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Find the Missing Number",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/missing-number/",
+    "platform": "LeetCode",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Find all Missing Numbers",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+    "platform": "LeetCode",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Find the Duplicate Number",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "platform": "LeetCode",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Find all Duplicate Numbers",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+    "platform": "LeetCode",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Problem Challenge 1: Find the Corrupt Pair",
+    "difficulty": "Easy",
+    "url": "https://thecodingsimplified.com/find-currupt-pair/",
+    "platform": "Other",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Problem Challenge 2: Find the Smallest Missing Positive Number",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/first-missing-positive/",
+    "platform": "LeetCode",
+    "sequence": 5
+  },
+  {
+    "pattern": "Cyclic Sort",
+    "title": "Problem Challenge 3: Find the First K Missing Positive Numbers",
+    "difficulty": "Hard",
+    "url": "https://thecodingsimplified.com/find-the-first-k-missing-positive-number/",
+    "platform": "Other",
+    "sequence": 5
+  }
+]

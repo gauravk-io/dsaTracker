@@ -1,0 +1,50 @@
+[
+  {
+    "pattern": "Kadane pattern",
+    "title": "Maximum subarray sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-subarray/?utm_source=chatgpt.com",
+    "platform": "LeetCode",
+    "sequence": 3.1
+  },
+  {
+    "pattern": "Kadane pattern",
+    "title": "Minimum Subarray Sum",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/problems/smallest-sum-contiguous-subarray/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 3.1
+  },
+  {
+    "pattern": "Kadane pattern",
+    "title": "Maximum product subarray",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-product-subarray/?utm_source=chatgpt.com",
+    "platform": "LeetCode",
+    "sequence": 3.1
+  },
+  {
+    "pattern": "Kadane pattern",
+    "title": "Maximum subarray sum with one deletion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/",
+    "platform": "LeetCode",
+    "sequence": 3.1
+  },
+  {
+    "pattern": "Kadane pattern",
+    "title": "Maximum absolute sum of any subarray",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/",
+    "platform": "LeetCode",
+    "sequence": 3.1
+  },
+  {
+    "pattern": "Kadane pattern",
+    "title": "Maximum sum in circular array variant",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/?utm_source=chatgpt.com",
+    "platform": "LeetCode",
+    "sequence": 3.1
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "pattern": "K-way merge",
+    "title": "Merge K Sorted Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "platform": "LeetCode",
+    "sequence": 18
+  },
+  {
+    "pattern": "K-way merge",
+    "title": "Kth Smallest Number in M Sorted Lists",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/find-m-th-smallest-value-in-k-sorted-arrays/",
+    "platform": "GeeksforGeeks",
+    "sequence": 18
+  },
+  {
+    "pattern": "K-way merge",
+    "title": "Kth Smallest Number in a Sorted Matrix",
+    "difficulty": "Hard",
+    "url": "https://www.educative.io/courses/grokking-the-coding-interview/x1NJVYKNvqz",
+    "platform": "Other",
+    "sequence": 18
+  },
+  {
+    "pattern": "K-way merge",
+    "title": "Smallest Number Range",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+    "platform": "LeetCode",
+    "sequence": 18
+  },
+  {
+    "pattern": "K-way merge",
+    "title": "Problem Challenge 1: K Pairs with Largest Sums",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 18
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Top 'K' Numbers (Read)",
+    "difficulty": "-",
+    "url": "https://github.com/dipjul/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions/blob/master/13.-pattern-top-k-elements/02.top-k-numbers.md",
+    "platform": "Other",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Kth Smallest Number",
+    "difficulty": "Easy",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "K' Closest Points to the Origin",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "platform": "LeetCode",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Connect Ropes",
+    "difficulty": "Easy",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Top 'K' Frequent Numbers",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Frequency Sort",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Kth Largest Number in a Stream",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "platform": "LeetCode",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "K' Closest Numbers",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Maximum Distinct Elements",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Sum of Elements",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Rearrange String",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Problem Challenge 1: Rearrange String K Distance Apart",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Problem Challenge 2: Scheduling Tasks",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "Problem Challenge 3: Frequency Stack",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 17
+  },
+  {
+    "pattern": "Top 'K' Elements",
+    "title": "*Heap Implementation (Read)",
+    "difficulty": "-",
+    "url": "https://github.com/dipjul/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions/blob/master/13.-pattern-top-k-elements/13.HeapImplementation.md",
+    "platform": "Other",
+    "sequence": 17
+  }
+]

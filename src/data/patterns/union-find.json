@@ -1,0 +1,42 @@
+[
+  {
+    "pattern": "Union Find",
+    "title": "Redundant Connection",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/redundant-connection/",
+    "platform": "LeetCode",
+    "sequence": 24
+  },
+  {
+    "pattern": "Union Find",
+    "title": "Redundant Connection",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/redundant-connection-ii/",
+    "platform": "LeetCode",
+    "sequence": 24
+  },
+  {
+    "pattern": "Union Find",
+    "title": "Number of Provinces",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/number-of-provinces/",
+    "platform": "LeetCode",
+    "sequence": 24
+  },
+  {
+    "pattern": "Union Find",
+    "title": "Is Graph Bipartite?",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/is-graph-bipartite/",
+    "platform": "LeetCode",
+    "sequence": 24
+  },
+  {
+    "pattern": "Union Find",
+    "title": "Path With Minimum Effort",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/path-with-minimum-effort/",
+    "platform": "LeetCode",
+    "sequence": 24
+  }
+]

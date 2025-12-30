@@ -1,0 +1,74 @@
+[
+  {
+    "pattern": "Stack",
+    "title": "remove adjacent duplicates",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Balanced Parentheses",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/valid-parentheses/description/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Reverse a String",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Next Greater Element",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/next-greater-element-ii/description/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Daily Temperatures",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Remove Nodes From Linked List",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/remove-nodes-from-linked-list/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Remove All Adjacent Duplicates in String II",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Simplify Path (Problem Challenge)",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/simplify-path/",
+    "platform": "LeetCode",
+    "sequence": 7
+  },
+  {
+    "pattern": "Stack",
+    "title": "Remove K Digits Problem challenge",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/remove-k-digits/",
+    "platform": "LeetCode",
+    "sequence": 7
+  }
+]

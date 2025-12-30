@@ -1,0 +1,122 @@
+[
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Order-agnostic Binary Search",
+    "difficulty": "Easy",
+    "url": "https://www.geeksforgeeks.org/order-agnostic-binary-search/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Ceiling of a Number",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Ceiling of a Number",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/floor-in-a-sorted-array/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Next Letter",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Number Range",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Search in a Sorted Infinite Array",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Bitonic Array Maximum",
+    "difficulty": "Easy",
+    "url": "https://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Problem Challenge 1: Search Bitonic Array",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/find-in-mountain-array/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Problem Challenge 2: Search in Rotated Array",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "Problem Challenge 3: Rotation Count",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/",
+    "platform": "GeeksforGeeks",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "*Search a 2D Matrix",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "*Minimum Number of Days to Make m Bouquets",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "*Koko Eating Bananas",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/koko-eating-bananas/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "*Capacity To Ship Packages Within D Days",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+    "platform": "LeetCode",
+    "sequence": 15
+  },
+  {
+    "pattern": "Modified Binary Search",
+    "title": "*Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "platform": "LeetCode",
+    "sequence": 15
+  }
+]

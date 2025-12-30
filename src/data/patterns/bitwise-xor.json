@@ -1,0 +1,34 @@
+[
+  {
+    "pattern": "Bitwise XOR",
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "url": "",
+    "platform": "",
+    "sequence": 16
+  },
+  {
+    "pattern": "Bitwise XOR",
+    "title": "Two Single Numbers",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 16
+  },
+  {
+    "pattern": "Bitwise XOR",
+    "title": "Complement of Base 10 Number",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 16
+  },
+  {
+    "pattern": "Bitwise XOR",
+    "title": "Problem Challenge 1: Flip and Invert an Image",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 16
+  }
+]

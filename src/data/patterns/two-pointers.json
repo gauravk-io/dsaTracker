@@ -1,0 +1,122 @@
+[
+  {
+    "pattern": "Two Pointers",
+    "title": "Pair with Target Sum",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Rearrange 0 and 1",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Remove Duplicates",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Remove Duplicates",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Remove Duplicates",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Squaring a Sorted Array",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Triplet Sum to Zero",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/3sum/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Triplet Sum Close to Target",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/3sum-closest/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Triplets with Smaller Sum",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Subarrays with Product Less than a Target",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/subarray-product-less-than-k/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Dutch National Flag Problem",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/sort-colors/description/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Problem Challenge 1: Quadruple Sum to Target",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/4sum/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Problem Challenge 2: Comparing Strings containing Backspaces",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/backspace-string-compare/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Problem Challenge 3: Minimum Window Sort",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/shortest-unsorted-continuous-subarray/",
+    "platform": "LeetCode",
+    "sequence": 1
+  },
+  {
+    "pattern": "Two Pointers",
+    "title": "Problem Challenge 3: Minimum Window Sort",
+    "difficulty": "Medium",
+    "url": "https://www.ideserve.co.in/learn/minimum-length-subarray-sorting-which-results-in-sorted-array",
+    "platform": "Other",
+    "sequence": 1
+  }
+]

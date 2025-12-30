@@ -1,0 +1,50 @@
+[
+  {
+    "pattern": "Subsets",
+    "title": "Subsets",
+    "difficulty": "Easy",
+    "url": "https://www.educative.io/courses/grokking-the-coding-interview/gx2OqlvEnWG",
+    "platform": "Other",
+    "sequence": 14
+  },
+  {
+    "pattern": "Subsets",
+    "title": "Subsets With Duplicates",
+    "difficulty": "Easy",
+    "url": "https://www.educative.io/courses/grokking-the-coding-interview/7npk3V3JQNr",
+    "platform": "Other",
+    "sequence": 14
+  },
+  {
+    "pattern": "Subsets",
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "url": "https://www.educative.io/courses/grokking-the-coding-interview/B8R83jyN3KY",
+    "platform": "Other",
+    "sequence": 14
+  },
+  {
+    "pattern": "Subsets",
+    "title": "String Permutations by changing case",
+    "difficulty": "Medium",
+    "url": "",
+    "platform": "",
+    "sequence": 14
+  },
+  {
+    "pattern": "Subsets",
+    "title": "Balanced Parentheses",
+    "difficulty": "Hard",
+    "url": "",
+    "platform": "",
+    "sequence": 14
+  },
+  {
+    "pattern": "Subsets",
+    "title": "Unique Generalized Abbreviations",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/generalized-abbreviation/",
+    "platform": "LeetCode",
+    "sequence": 14
+  }
+]

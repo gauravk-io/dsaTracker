@@ -1,0 +1,98 @@
+[
+  {
+    "pattern": "Sliding Window",
+    "title": "Maximum Sum Subarray of Size K",
+    "difficulty": "Easy",
+    "url": "https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Smallest Subarray with a given sum",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Longest Substring with K Distinct Characters",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Fruits into Baskets",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/fruit-into-baskets/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "No-repeat Substring",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Longest Substring with Same Letters after Replacement",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Longest Subarray with Ones after Replacement",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Minimum size subarray SUM",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "MInimum Size Substring",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/minimum-window-substring/description/?envType=study-plan-v2&envId=top-interview-150",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Problem Challenge 1: Permutation in a String",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/permutation-in-string/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Problem Challenge 2: String Anagrams",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+    "platform": "LeetCode",
+    "sequence": 3
+  },
+  {
+    "pattern": "Sliding Window",
+    "title": "Problem Challenge 4: Words Concatenation",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "platform": "LeetCode",
+    "sequence": 3
+  }
+]

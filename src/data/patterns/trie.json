@@ -1,0 +1,42 @@
+[
+  {
+    "pattern": "Trie",
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "platform": "LeetCode",
+    "sequence": 22
+  },
+  {
+    "pattern": "Trie",
+    "title": "Index Pairs of a String",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/index-pairs-of-a-string/",
+    "platform": "LeetCode",
+    "sequence": 22
+  },
+  {
+    "pattern": "Trie",
+    "title": "Design Add and Search Words Data Structure",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "platform": "LeetCode",
+    "sequence": 22
+  },
+  {
+    "pattern": "Trie",
+    "title": "Extra Characters in a String",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/extra-characters-in-a-string/",
+    "platform": "LeetCode",
+    "sequence": 22
+  },
+  {
+    "pattern": "Trie",
+    "title": "Search Suggestions System",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/search-suggestions-system/",
+    "platform": "LeetCode",
+    "sequence": 22
+  }
+]

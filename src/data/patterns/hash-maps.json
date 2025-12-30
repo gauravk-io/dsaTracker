@@ -1,0 +1,34 @@
+[
+  {
+    "pattern": "Hash Maps",
+    "title": "First Non-repeating Character",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+    "platform": "LeetCode",
+    "sequence": 8
+  },
+  {
+    "pattern": "Hash Maps",
+    "title": "Maximum Number of Balloons",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+    "platform": "LeetCode",
+    "sequence": 8
+  },
+  {
+    "pattern": "Hash Maps",
+    "title": "Longest Palindrome",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/longest-palindrome/",
+    "platform": "LeetCode",
+    "sequence": 8
+  },
+  {
+    "pattern": "Hash Maps",
+    "title": "Ransom Note",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/ransom-note/",
+    "platform": "LeetCode",
+    "sequence": 8
+  }
+]

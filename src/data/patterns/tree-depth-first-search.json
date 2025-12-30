@@ -1,0 +1,58 @@
+[
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Binary Tree Path Sum",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/path-sum/",
+    "platform": "LeetCode",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "All Paths for a Sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/path-sum-iii/",
+    "platform": "LeetCode",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Sum of Path Numbers",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+    "platform": "LeetCode",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Path With Given Sequence",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/check-root-leaf-path-given-sequence/",
+    "platform": "GeeksforGeeks",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Count Paths for a Sum",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/path-sum-iii/",
+    "platform": "LeetCode",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Problem Challenge 1: Tree Diameter",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "platform": "LeetCode",
+    "sequence": 10
+  },
+  {
+    "pattern": "Tree Depth First Search",
+    "title": "Problem Challenge 2: Path with Maximum Sum",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "platform": "LeetCode",
+    "sequence": 10
+  }
+]

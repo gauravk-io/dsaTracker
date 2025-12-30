@@ -1,0 +1,50 @@
+[
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Reverse a LinkedList",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "platform": "LeetCode",
+    "sequence": 6
+  },
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Reverse a Sub-list",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+    "platform": "LeetCode",
+    "sequence": 6
+  },
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Reverse List in Pairs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/swap-nodes-in-pairs/description/",
+    "platform": "LeetCode",
+    "sequence": 6
+  },
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Reverse every K-element Sub-list",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "platform": "LeetCode",
+    "sequence": 6
+  },
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Problem Challenge 1: Reverse nodes in EVEN Length Groups",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/reverse-nodes-in-even-length-groups/description/",
+    "platform": "LeetCode",
+    "sequence": 6
+  },
+  {
+    "pattern": "In-place Reversal of a LinkedList",
+    "title": "Problem Challenge 2: Rotate a LinkedList",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/rotate-list/",
+    "platform": "LeetCode",
+    "sequence": 6
+  }
+]

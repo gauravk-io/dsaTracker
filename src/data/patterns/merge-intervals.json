@@ -1,0 +1,58 @@
+[
+  {
+    "pattern": "Merge Intervals",
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/merge-intervals/description/",
+    "platform": "LeetCode",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/insert-interval/",
+    "platform": "LeetCode",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Intervals Intersection",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/interval-list-intersections/description/",
+    "platform": "LeetCode",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Overlapping Intervals",
+    "difficulty": "Medium",
+    "url": "https://www.geeksforgeeks.org/check-if-any-two-intervals-overlap-among-a-given-set-of-intervals/",
+    "platform": "GeeksforGeeks",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Problem Challenge 1: Minimum Meeting Rooms",
+    "difficulty": "Hard",
+    "url": "https://www.geeksforgeeks.org/problems/attend-all-meetings-ii/1",
+    "platform": "GeeksforGeeks",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Problem Challenge 2: Maximum CPU Load",
+    "difficulty": "Hard",
+    "url": "https://www.geeksforgeeks.org/maximum-cpu-load-from-the-given-list-of-jobs/",
+    "platform": "GeeksforGeeks",
+    "sequence": 4
+  },
+  {
+    "pattern": "Merge Intervals",
+    "title": "Problem Challenge 3: Employee Free Time",
+    "difficulty": "Hard",
+    "url": "https://www.codertrain.co/employee-free-time",
+    "platform": "Other",
+    "sequence": 4
+  }
+]

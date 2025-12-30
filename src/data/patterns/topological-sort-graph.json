@@ -1,0 +1,58 @@
+[
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Topological Sort",
+    "difficulty": "Medium",
+    "url": "https://www.youtube.com/watch?v=cIBFEhD77b4",
+    "platform": "Other",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Tasks Scheduling",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/course-schedule/",
+    "platform": "LeetCode",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Tasks Scheduling Order",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/course-schedule/",
+    "platform": "LeetCode",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "All Tasks Scheduling Orders",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/course-schedule-ii/",
+    "platform": "LeetCode",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Alien Dictionary",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/alien-dictionary/",
+    "platform": "LeetCode",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Problem Challenge 1: Reconstructing a Sequence",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/sequence-reconstruction/",
+    "platform": "LeetCode",
+    "sequence": 23
+  },
+  {
+    "pattern": "Topological Sort (Graph)",
+    "title": "Problem Challenge 2: Minimum Height Trees",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problems/minimum-height-trees/",
+    "platform": "LeetCode",
+    "sequence": 23
+  }
+]

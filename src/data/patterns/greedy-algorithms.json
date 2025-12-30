@@ -1,0 +1,50 @@
+[
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Valid Palindrome II",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "platform": "LeetCode",
+    "sequence": 19
+  },
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Maximum Length of Pair Chain",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/maximum-length-of-pair-chain/",
+    "platform": "LeetCode",
+    "sequence": 19
+  },
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Minimum Add to Make Parentheses Valid",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "platform": "LeetCode",
+    "sequence": 19
+  },
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Remove Duplicate Letters",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/remove-duplicate-letters/",
+    "platform": "LeetCode",
+    "sequence": 19
+  },
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Largest Palindromic Number",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/largest-palindromic-number/",
+    "platform": "LeetCode",
+    "sequence": 19
+  },
+  {
+    "pattern": "Greedy Algorithms",
+    "title": "Removing Minimum and Maximum From Array",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/",
+    "platform": "LeetCode",
+    "sequence": 19
+  }
+]

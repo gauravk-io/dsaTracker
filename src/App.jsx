@@ -5,6 +5,7 @@ import PatternGroup from './components/PatternGroup';
 import problemData from './data/index.js';
 
 import confetti from 'canvas-confetti';
+import celebrationSound from './assets/celebration.mp3';
 
 function App() {
   // State for checkmarks
@@ -50,6 +51,10 @@ function App() {
       if (prev.includes(id)) {
         return prev.filter(pid => pid !== id);
       } else {
+        // Play sound
+        const audio = new Audio(celebrationSound);
+        audio.play().catch(() => {});
+
         // Fire from left
         confetti({
           particleCount: 100,

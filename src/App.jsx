@@ -4,6 +4,8 @@ import Stats from './components/Stats';
 import PatternGroup from './components/PatternGroup';
 import problemData from './data/index.js';
 
+import confetti from 'canvas-confetti';
+
 function App() {
   // State for checkmarks
   const [completedIds, setCompletedIds] = useState(() => {
@@ -44,9 +46,27 @@ function App() {
   }, [searchTerm]);
 
   const toggleProblem = (id) => {
-    setCompletedIds(prev => 
-      prev.includes(id) ? prev.filter(pid => pid !== id) : [...prev, id]
-    );
+    setCompletedIds(prev => {
+      if (prev.includes(id)) {
+        return prev.filter(pid => pid !== id);
+      } else {
+        // Fire from left
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { x: 0.1, y: 0.8 },
+          angle: 60
+        });
+        // Fire from right
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { x: 0.9, y: 0.8 },
+          angle: 120
+        });
+        return [...prev, id];
+      }
+    });
   };
 
   // Get the sequence number for a pattern by looking at the first problem in that pattern

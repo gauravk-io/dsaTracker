@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Search, Filter, Code2, Github } from 'lucide-react';
+import { Search, Filter, Code2, Github, Volume2, VolumeX } from 'lucide-react';
 import Stats from './components/Stats';
 import PatternGroup from './components/PatternGroup';
 import problemData from './data/index.js';
@@ -18,10 +18,18 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [difficultyFilter, setDifficultyFilter] = useState('All');
   const [platformFilter, setPlatformFilter] = useState('All');
+  const [isMuted, setIsMuted] = useState(() => {
+    const saved = localStorage.getItem('dsa-tracker-muted');
+    return saved ? JSON.parse(saved) : false;
+  });
 
   useEffect(() => {
     localStorage.setItem('dsa-tracker-progress', JSON.stringify(completedIds));
   }, [completedIds]);
+
+  useEffect(() => {
+    localStorage.setItem('dsa-tracker-muted', JSON.stringify(isMuted));
+  }, [isMuted]);
 
   // State for expanded groups
   const [expandedPatterns, setExpandedPatterns] = useState(() => {
@@ -52,8 +60,10 @@ function App() {
         return prev.filter(pid => pid !== id);
       } else {
         // Play sound
-        const audio = new Audio(celebrationSound);
-        audio.play().catch(() => {});
+        if (!isMuted) {
+          const audio = new Audio(celebrationSound);
+          audio.play().catch(() => {});
+        }
 
         // Fire from left
         confetti({
@@ -191,8 +201,8 @@ function App() {
                     style={{ color: 'var(--text-muted)', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}
                     className="nav-link"
                 >
-                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
-                   <span style={{ display: 'none', '@media (min-width: 768px)': { display: 'inline' } }}>Playlist</span>
+                   <svg className="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                   <span className="show-on-desktop">Playlist</span>
                 </a>
                 
                 <a 
@@ -202,12 +212,29 @@ function App() {
                     style={{ color: 'var(--text-muted)', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}
                     className="nav-link"
                 >
-                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                   <span style={{ display: 'none', '@media (min-width: 768px)': { display: 'inline' } }}>Sheet</span>
+                   <svg className="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                   <span className="show-on-desktop">Sheet</span>
                 </a>
                 <a href="https://github.com/gauravk-io/sheetTracker" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', transition: 'color 0.2s', display: 'flex', alignItems: 'center' }}>
-                   <Github size={24} />
+                   <Github className="header-icon" />
                 </a>
+                
+                <button 
+                    onClick={() => setIsMuted(prev => !prev)}
+                    style={{ 
+                        background: 'transparent',
+                        border: 'none',
+                        cursor: 'pointer',
+                        color: 'var(--text-muted)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        padding: 0,
+                        transition: 'color 0.2s'
+                    }}
+                    title={isMuted ? "Unmute celebration sound" : "Mute celebration sound"}
+                >
+                    {isMuted ? <VolumeX className="header-icon" /> : <Volume2 className="header-icon" />}
+                </button>
             </div>
         </div>
       </header>

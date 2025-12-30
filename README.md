@@ -2,6 +2,8 @@
 
 A dedicated platform to track your progress on the **"Padho with Pratyush"** DSA pattern sheet.
 
+**Live Website**: [https://patternsheet.vercel.app/](https://patternsheet.vercel.app/)
+
 ## Resources
 
 - **YouTube Playlist**: [Watch here](https://youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&si=JNnnEBLVfrxXIpCj)

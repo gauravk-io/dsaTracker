@@ -1,16 +1,20 @@
 import React, { useState } from "react";
-import { X, Mail, Lock, User } from "lucide-react";
+import { X, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 
 const AuthModal = ({ isOpen, onClose }) => {
   const [isLogin, setIsLogin] = useState(true);
+  const [isForgotPassword, setIsForgotPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
 
-  const { signIn, signUp } = useAuth();
+  const { signIn, signUp, resetPassword } = useAuth();
 
   if (!isOpen) return null;
 
@@ -21,11 +25,25 @@ const AuthModal = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      if (isLogin) {
+      if (isForgotPassword) {
+        const { error } = await resetPassword(email);
+        if (error) throw error;
+        setMessage("Check your email for the password reset link!");
+        setTimeout(() => {
+          setIsForgotPassword(false);
+          setEmail("");
+        }, 3000);
+      } else if (isLogin) {
         const { error } = await signIn(email, password);
         if (error) throw error;
         onClose();
       } else {
+        if (password !== confirmPassword) {
+          throw new Error("Passwords do not match!");
+        }
+        if (password.length < 6) {
+          throw new Error("Password must be at least 6 characters long!");
+        }
         const { error } = await signUp(email, password);
         if (error) throw error;
         setMessage("Check your email for the confirmation link!");
@@ -109,10 +127,16 @@ const AuthModal = ({ isOpen, onClose }) => {
               color: "var(--text-primary)",
             }}
           >
-            {isLogin ? "Welcome Back" : "Create Account"}
+            {isForgotPassword
+              ? "Reset Password"
+              : isLogin
+              ? "Welcome Back"
+              : "Create Account"}
           </h2>
           <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
-            {isLogin
+            {isForgotPassword
+              ? "Enter your email to receive a reset link"
+              : isLogin
               ? "Sign in to sync your progress"
               : "Sign up to track your progress"}
           </p>
@@ -169,56 +193,187 @@ const AuthModal = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          <div style={{ marginBottom: "1.5rem" }}>
-            <label
+          {!isForgotPassword && (
+            <>
+              <div style={{ marginBottom: "1.5rem" }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "0.5rem",
+                    color: "var(--text-secondary)",
+                    fontSize: "0.875rem",
+                    fontWeight: "500",
+                  }}
+                >
+                  Password
+                </label>
+                <div style={{ position: "relative" }}>
+                  <Lock
+                    size={18}
+                    style={{
+                      position: "absolute",
+                      left: "1rem",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      color: "var(--text-muted)",
+                    }}
+                  />
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                    placeholder="••••••••"
+                    minLength={6}
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 3rem 0.75rem 2.75rem",
+                      background: "var(--bg-tertiary)",
+                      border: "1px solid var(--border-color)",
+                      borderRadius: "var(--radius-md)",
+                      color: "var(--text-primary)",
+                      fontSize: "0.9rem",
+                      outline: "none",
+                      transition: "all 0.2s",
+                    }}
+                    onFocus={(e) =>
+                      (e.target.style.borderColor = "var(--accent-primary)")
+                    }
+                    onBlur={(e) =>
+                      (e.target.style.borderColor = "var(--border-color)")
+                    }
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    style={{
+                      position: "absolute",
+                      right: "1rem",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      background: "transparent",
+                      border: "none",
+                      color: "var(--text-muted)",
+                      cursor: "pointer",
+                      padding: "0.25rem",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                  </button>
+                </div>
+              </div>
+
+              {!isLogin && (
+                <div style={{ marginBottom: "1.5rem" }}>
+                  <label
+                    style={{
+                      display: "block",
+                      marginBottom: "0.5rem",
+                      color: "var(--text-secondary)",
+                      fontSize: "0.875rem",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Confirm Password
+                  </label>
+                  <div style={{ position: "relative" }}>
+                    <Lock
+                      size={18}
+                      style={{
+                        position: "absolute",
+                        left: "1rem",
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        color: "var(--text-muted)",
+                      }}
+                    />
+                    <input
+                      type={showConfirmPassword ? "text" : "password"}
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                      required
+                      placeholder="••••••••"
+                      minLength={6}
+                      style={{
+                        width: "100%",
+                        padding: "0.75rem 3rem 0.75rem 2.75rem",
+                        background: "var(--bg-tertiary)",
+                        border: "1px solid var(--border-color)",
+                        borderRadius: "var(--radius-md)",
+                        color: "var(--text-primary)",
+                        fontSize: "0.9rem",
+                        outline: "none",
+                        transition: "all 0.2s",
+                      }}
+                      onFocus={(e) =>
+                        (e.target.style.borderColor = "var(--accent-primary)")
+                      }
+                      onBlur={(e) =>
+                        (e.target.style.borderColor = "var(--border-color)")
+                      }
+                    />
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setShowConfirmPassword(!showConfirmPassword)
+                      }
+                      style={{
+                        position: "absolute",
+                        right: "1rem",
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        background: "transparent",
+                        border: "none",
+                        color: "var(--text-muted)",
+                        cursor: "pointer",
+                        padding: "0.25rem",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {showConfirmPassword ? (
+                        <EyeOff size={18} />
+                      ) : (
+                        <Eye size={18} />
+                      )}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+
+          {isLogin && !isForgotPassword && (
+            <div
               style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                color: "var(--text-secondary)",
-                fontSize: "0.875rem",
-                fontWeight: "500",
+                textAlign: "right",
+                marginBottom: "1rem",
               }}
             >
-              Password
-            </label>
-            <div style={{ position: "relative" }}>
-              <Lock
-                size={18}
-                style={{
-                  position: "absolute",
-                  left: "1rem",
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  color: "var(--text-muted)",
+              <button
+                type="button"
+                onClick={() => {
+                  setIsForgotPassword(true);
+                  setError("");
+                  setMessage("");
                 }}
-              />
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                placeholder="••••••••"
-                minLength={6}
                 style={{
-                  width: "100%",
-                  padding: "0.75rem 1rem 0.75rem 2.75rem",
-                  background: "var(--bg-tertiary)",
-                  border: "1px solid var(--border-color)",
-                  borderRadius: "var(--radius-md)",
-                  color: "var(--text-primary)",
-                  fontSize: "0.9rem",
-                  outline: "none",
-                  transition: "all 0.2s",
+                  background: "transparent",
+                  border: "none",
+                  color: "var(--accent-secondary)",
+                  cursor: "pointer",
+                  fontSize: "0.875rem",
+                  textDecoration: "underline",
                 }}
-                onFocus={(e) =>
-                  (e.target.style.borderColor = "var(--accent-primary)")
-                }
-                onBlur={(e) =>
-                  (e.target.style.borderColor = "var(--border-color)")
-                }
-              />
+              >
+                Forgot Password?
+              </button>
             </div>
-          </div>
+          )}
 
           {error && (
             <div
@@ -275,7 +430,13 @@ const AuthModal = ({ isOpen, onClose }) => {
               if (!loading) e.target.style.opacity = "1";
             }}
           >
-            {loading ? "Please wait..." : isLogin ? "Sign In" : "Sign Up"}
+            {loading
+              ? "Please wait..."
+              : isForgotPassword
+              ? "Send Reset Link"
+              : isLogin
+              ? "Sign In"
+              : "Sign Up"}
           </button>
         </form>
 
@@ -287,27 +448,53 @@ const AuthModal = ({ isOpen, onClose }) => {
             borderTop: "1px solid var(--border-color)",
           }}
         >
-          <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem" }}>
-            {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
-            <button
-              onClick={() => {
-                setIsLogin(!isLogin);
-                setError("");
-                setMessage("");
-              }}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "var(--accent-secondary)",
-                cursor: "pointer",
-                fontWeight: "600",
-                fontSize: "0.875rem",
-                textDecoration: "underline",
-              }}
-            >
-              {isLogin ? "Sign Up" : "Sign In"}
-            </button>
-          </p>
+          {isForgotPassword ? (
+            <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem" }}>
+              Remember your password?{" "}
+              <button
+                onClick={() => {
+                  setIsForgotPassword(false);
+                  setIsLogin(true);
+                  setError("");
+                  setMessage("");
+                }}
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "var(--accent-secondary)",
+                  cursor: "pointer",
+                  fontWeight: "600",
+                  fontSize: "0.875rem",
+                  textDecoration: "underline",
+                }}
+              >
+                Sign In
+              </button>
+            </p>
+          ) : (
+            <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem" }}>
+              {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
+              <button
+                onClick={() => {
+                  setIsLogin(!isLogin);
+                  setError("");
+                  setMessage("");
+                  setConfirmPassword("");
+                }}
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "var(--accent-secondary)",
+                  cursor: "pointer",
+                  fontWeight: "600",
+                  fontSize: "0.875rem",
+                  textDecoration: "underline",
+                }}
+              >
+                {isLogin ? "Sign Up" : "Sign In"}
+              </button>
+            </p>
+          )}
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ import PatternGroup from "./components/PatternGroup";
 import AuthModal from "./components/AuthModal";
 import AuthBanner from "./components/AuthBanner";
 import HamburgerMenu from "./components/HamburgerMenu";
+import UpdatePasswordModal from "./components/UpdatePasswordModal";
 import problemData from "./data/index.js";
 import { useAuth } from "./contexts/AuthContext";
 import { useProgress } from "./hooks/useProgress";
@@ -375,6 +376,8 @@ function App() {
         isOpen={showAuthModal}
         onClose={() => setShowAuthModal(false)}
       />
+
+      <UpdatePasswordModal />
 
       <main
         className="container"

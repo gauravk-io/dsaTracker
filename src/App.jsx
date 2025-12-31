@@ -177,7 +177,7 @@ function App() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                 <img 
-                    src="/logo.png" 
+                    src="/logo.jpg" 
                     alt="Sheet Tracker Logo" 
                     style={{ 
                         width: '42px', 

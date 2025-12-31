@@ -1,18 +1,23 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Search, Filter, Code2, Github, Volume2, VolumeX } from 'lucide-react';
+import { Search, Filter, Code2, Github, Volume2, VolumeX, LogIn, LogOut, User } from 'lucide-react';
 import Stats from './components/Stats';
 import PatternGroup from './components/PatternGroup';
+import AuthModal from './components/AuthModal';
+import AuthBanner from './components/AuthBanner';
+import HamburgerMenu from './components/HamburgerMenu';
 import problemData from './data/index.js';
+import { useAuth } from './contexts/AuthContext';
+import { useProgress } from './hooks/useProgress';
 
 import confetti from 'canvas-confetti';
 import celebrationSound from './assets/celebration.mp3';
 
 function App() {
-  // State for checkmarks
-  const [completedIds, setCompletedIds] = useState(() => {
-    const saved = localStorage.getItem('dsa-tracker-progress');
-    return saved ? JSON.parse(saved) : [];
-  });
+  const { user, signOut } = useAuth();
+  const { completedIds, toggleProblem: toggleProgress } = useProgress();
+  
+  // State for auth modal
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   // State for search/filter
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,10 +27,6 @@ function App() {
     const saved = localStorage.getItem('dsa-tracker-muted');
     return saved ? JSON.parse(saved) : false;
   });
-
-  useEffect(() => {
-    localStorage.setItem('dsa-tracker-progress', JSON.stringify(completedIds));
-  }, [completedIds]);
 
   useEffect(() => {
     localStorage.setItem('dsa-tracker-muted', JSON.stringify(isMuted));
@@ -54,34 +55,31 @@ function App() {
       }
   }, [searchTerm]);
 
-  const toggleProblem = (id) => {
-    setCompletedIds(prev => {
-      if (prev.includes(id)) {
-        return prev.filter(pid => pid !== id);
-      } else {
-        // Play sound
-        if (!isMuted) {
-          const audio = new Audio(celebrationSound);
-          audio.play().catch(() => {});
-        }
-
-        // Fire from left
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { x: 0.1, y: 0.8 },
-          angle: 60
-        });
-        // Fire from right
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { x: 0.9, y: 0.8 },
-          angle: 120
-        });
-        return [...prev, id];
+  const toggleProblem = async (id) => {
+    const wasCompleted = await toggleProgress(id);
+    
+    if (wasCompleted) {
+      // Play sound
+      if (!isMuted) {
+        const audio = new Audio(celebrationSound);
+        audio.play().catch(() => {});
       }
-    });
+
+      // Fire from left
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: 0.1, y: 0.8 },
+        angle: 60
+      });
+      // Fire from right
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: 0.9, y: 0.8 },
+        angle: 120
+      });
+    }
   };
 
   // Get the sequence number for a pattern by looking at the first problem in that pattern
@@ -235,9 +233,66 @@ function App() {
                 >
                     {isMuted ? <VolumeX className="header-icon" /> : <Volume2 className="header-icon" />}
                 </button>
+
+                {user ? (
+                  <button
+                    onClick={signOut}
+                    style={{
+                      background: 'transparent',
+                      border: '1px solid var(--border-color)',
+                      borderRadius: 'var(--radius-sm)',
+                      padding: '0.5rem 0.75rem',
+                      color: 'var(--text-muted)',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      fontSize: '0.875rem',
+                      fontWeight: '500',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = 'var(--danger)';
+                      e.currentTarget.style.color = 'var(--danger)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'var(--border-color)';
+                      e.currentTarget.style.color = 'var(--text-muted)';
+                    }}
+                    title={user.email}
+                  >
+                    <LogOut size={18} />
+                    <span className="show-on-desktop">Sign Out</span>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setShowAuthModal(true)}
+                    className="btn btn-primary"
+                    style={{
+                      padding: '0.5rem 0.75rem',
+                      fontSize: '0.875rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem'
+                    }}
+                  >
+                    <LogIn size={18} />
+                    <span className="show-on-desktop">Sign In</span>
+                  </button>
+                )}
+
+                <HamburgerMenu 
+                  isMuted={isMuted}
+                  onToggleMute={() => setIsMuted(prev => !prev)}
+                  onAuthClick={() => setShowAuthModal(true)}
+                />
             </div>
         </div>
       </header>
+
+      {!user && <AuthBanner onSignUpClick={() => setShowAuthModal(true)} />}
+
+      <AuthModal isOpen={showAuthModal} onClose={() => setShowAuthModal(false)} />
 
       <main className="container" style={{ padding: '2rem 1rem', flex: 1 }}>
         <Stats total={totalProblems} completed={completedCount} />

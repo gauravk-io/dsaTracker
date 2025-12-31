@@ -187,4 +187,13 @@ body {
   .header-icons-container {
     gap: 0.75rem;
   }
+
+  .hamburger-button {
+    display: flex !important;
+  }
+
+  .header-icons-container > a,
+  .header-icons-container > button:not(.hamburger-button) {
+    display: none !important;
+  }
 }

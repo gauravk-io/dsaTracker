@@ -37,9 +37,15 @@ npm run dev
 ## Features
 
 - **Pattern-wise Tracking**: Problems are grouped by patterns for structured learning.
+- **Cloud Sync**: Sign in to sync your progress across devices (powered by Supabase).
+- **Guest Mode**: Progress is saved locally for non-authenticated users.
+- **Responsive Design**: optimized for both desktop and mobile use.
 - **Progress Stats**: Visual statistics to keep you motivated.
 - **Filters**: Filter by difficulty, platform, and search by pattern/problem.
-- **Local Storage**: Your progress is saved automatically in your browser.
+
+## Supabase Setup
+
+This project uses Supabase for authentication and database features. Please read [SUPABASE_SETUP.md](SUPABASE_SETUP.md) for instructions on how to set up your own Supabase project.
 
 ## Contributing
 

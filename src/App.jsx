@@ -2,13 +2,11 @@ import React, { useState, useEffect, useMemo } from "react";
 import {
   Search,
   Filter,
-  Code2,
   Github,
   Volume2,
   VolumeX,
   LogIn,
   LogOut,
-  User,
 } from "lucide-react";
 import Stats from "./components/Stats";
 import PatternGroup from "./components/PatternGroup";
@@ -51,25 +49,9 @@ function App() {
     setExpandedPatterns((prev) =>
       prev.includes(pattern)
         ? prev.filter((p) => p !== pattern)
-        : [...prev, pattern],
+        : [...prev, pattern]
     );
   };
-
-  // Auto-expand on search
-  useEffect(() => {
-    if (searchTerm) {
-      const matchingPatterns = problemData
-        .filter(
-          (p) =>
-            p.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            p.pattern.toLowerCase().includes(searchTerm.toLowerCase()),
-        )
-        .map((p) => p.pattern);
-      setExpandedPatterns((prev) => [
-        ...new Set([...prev, ...matchingPatterns]),
-      ]);
-    }
-  }, [searchTerm]);
 
   const toggleProblem = async (id) => {
     const wasCompleted = await toggleProgress(id);
@@ -161,7 +143,7 @@ function App() {
   const collapseAll = () => {
     const visiblePatterns = Object.keys(groupedProblems);
     setExpandedPatterns((prev) =>
-      prev.filter((p) => !visiblePatterns.includes(p)),
+      prev.filter((p) => !visiblePatterns.includes(p))
     );
   };
 
@@ -332,10 +314,10 @@ function App() {
                 onClick={signOut}
                 style={{
                   background: "transparent",
-                  border: "1px solid var(--border-color)",
+                  border: "none",
                   borderRadius: "var(--radius-sm)",
                   padding: "0.5rem 0.75rem",
-                  color: "var(--text-muted)",
+                  color: "var(--danger)",
                   cursor: "pointer",
                   display: "flex",
                   alignItems: "center",
@@ -345,12 +327,10 @@ function App() {
                   transition: "all 0.2s",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--danger)";
-                  e.currentTarget.style.color = "var(--danger)";
+                  e.currentTarget.style.background = "rgba(239, 68, 68, 0.1)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "var(--border-color)";
-                  e.currentTarget.style.color = "var(--text-muted)";
+                  e.currentTarget.style.background = "transparent";
                 }}
                 title={user.email}
               >
@@ -367,9 +347,15 @@ function App() {
                   display: "flex",
                   alignItems: "center",
                   gap: "0.5rem",
+                  background: "white",
+                  color: "black",
+                  border: "none",
+                  borderRadius: "var(--radius-sm)",
+                  cursor: "pointer",
+                  fontWeight: "600",
+                  transition: "all 0.2s",
                 }}
               >
-                <LogIn size={18} />
                 <span className="show-on-desktop">Sign In</span>
               </button>
             )}
@@ -392,7 +378,7 @@ function App() {
 
       <main
         className="container"
-        style={{ padding: ".25rem 1rem 2rem", flex: 1 }}
+        style={{ padding: "1rem 1rem 2rem", flex: 1 }}
       >
         <Stats total={totalProblems} completed={completedCount} />
 

@@ -1,65 +1,86 @@
 import React, { useState } from "react";
-import { Menu, X, Github, Volume2, VolumeX, LogOut } from "lucide-react";
+import { Menu, X, Github, Volume2, VolumeX, LogOut, User } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
+import { supabase } from "../lib/supabase";
 
 const HamburgerMenu = ({ isMuted, onToggleMute, onAuthClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, signOut } = useAuth();
 
-  const handleSignOut = async () => {
-    await signOut();
-    setIsOpen(false);
+  const handleSignOut = async (e) => {
+    e?.preventDefault();
+    e?.stopPropagation();
+
+    try {
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (!session) {
+        setIsOpen(false);
+        window.location.reload();
+        return;
+      }
+
+      const { error } = await signOut();
+      if (!error) {
+        window.location.reload();
+      }
+      setIsOpen(false);
+    } catch (err) {
+      setIsOpen(false);
+    }
   };
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        style={{
-          background: "transparent",
-          border: "none",
-          color: "var(--text-muted)",
-          cursor: "pointer",
-          padding: "0.5rem",
-          display: "none",
-          alignItems: "center",
-          justifyContent: "center",
-          transition: "color 0.2s",
-        }}
-        className="hamburger-button"
-        onMouseEnter={(e) => (e.target.style.color = "var(--text-primary)")}
-        onMouseLeave={(e) => (e.target.style.color = "var(--text-muted)")}
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-
       {isOpen && (
-        <>
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 998,
+          }}
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      <div style={{ position: "relative" }}>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          style={{
+            background: "transparent",
+            border: "none",
+            color: "var(--text-muted)",
+            cursor: "pointer",
+            padding: "0.5rem",
+            display: "none",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "color 0.2s",
+          }}
+          className="hamburger-button"
+          onMouseEnter={(e) => (e.target.style.color = "var(--text-primary)")}
+          onMouseLeave={(e) => (e.target.style.color = "var(--text-muted)")}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {isOpen && (
           <div
             style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
+              position: "absolute",
+              top: "calc(100% + 0.5rem)",
               right: 0,
-              bottom: 0,
-              background: "rgba(0, 0, 0, 0.5)",
-              backdropFilter: "blur(2px)",
-              zIndex: 998,
-            }}
-            onClick={() => setIsOpen(false)}
-          />
-          <div
-            style={{
-              position: "fixed",
-              top: "72px",
-              right: "1rem",
               background: "var(--bg-secondary)",
               border: "1px solid var(--border-color)",
               borderRadius: "var(--radius-md)",
               padding: "0.5rem",
-              zIndex: 999,
               minWidth: "200px",
-              boxShadow: "var(--shadow-lg)",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+              zIndex: 999,
             }}
           >
             <a
@@ -212,6 +233,10 @@ const HamburgerMenu = ({ isMuted, onToggleMute, onAuthClick }) => {
                 </div>
                 <button
                   onClick={handleSignOut}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleSignOut(e);
+                  }}
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -227,6 +252,7 @@ const HamburgerMenu = ({ isMuted, onToggleMute, onAuthClick }) => {
                     cursor: "pointer",
                     width: "100%",
                     textAlign: "left",
+                    WebkitTapHighlightColor: "transparent",
                   }}
                   onMouseEnter={(e) =>
                     (e.target.style.background = "rgba(239, 68, 68, 0.1)")
@@ -245,21 +271,36 @@ const HamburgerMenu = ({ isMuted, onToggleMute, onAuthClick }) => {
                   onAuthClick();
                   setIsOpen(false);
                 }}
-                className="btn btn-primary"
                 style={{
-                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.75rem",
                   padding: "0.75rem 1rem",
+                  color: "var(--text-primary)",
+                  background: "transparent",
+                  border: "none",
+                  borderRadius: "var(--radius-sm)",
+                  transition: "background 0.2s",
                   fontSize: "0.9rem",
-                  fontWeight: "600",
-                  margin: "0.5rem 0",
+                  fontWeight: "500",
+                  cursor: "pointer",
+                  width: "100%",
+                  textAlign: "left",
                 }}
+                onMouseEnter={(e) =>
+                  (e.target.style.background = "var(--bg-tertiary)")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.background = "transparent")
+                }
               >
-                Sign In / Sign Up
+                <User size={20} />
+                Sign In
               </button>
             )}
           </div>
-        </>
-      )}
+        )}
+      </div>
     </>
   );
 };

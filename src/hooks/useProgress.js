@@ -21,17 +21,13 @@ export const useProgress = () => {
           },
           {
             onConflict: "user_id",
-          },
+          }
         );
-
-        if (error) {
-          console.error("Error saving progress:", error);
-        }
       } catch (error) {
-        console.error("Error saving progress:", error);
+        // Silently handle error
       }
     },
-    [user],
+    [user]
   );
 
   // Load progress from Supabase or localStorage
@@ -46,10 +42,7 @@ export const useProgress = () => {
             .eq("user_id", user.id)
             .single();
 
-          if (error && error.code !== "PGRST116") {
-            // PGRST116 is "not found" error, which is fine for new users
-            console.error("Error loading progress:", error);
-          }
+          // Silently handle errors (PGRST116 is "not found" error, which is fine for new users)
 
           if (data) {
             setCompletedIds(data.completed_problems || []);
@@ -64,7 +57,7 @@ export const useProgress = () => {
             }
           }
         } catch (error) {
-          console.error("Error loading progress:", error);
+          // Silently handle error
         }
       } else {
         // Load from localStorage for non-authenticated users

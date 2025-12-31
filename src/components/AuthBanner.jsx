@@ -1,5 +1,4 @@
 import React from "react";
-import { AlertCircle } from "lucide-react";
 
 const AuthBanner = ({ onSignUpClick }) => {
   return (

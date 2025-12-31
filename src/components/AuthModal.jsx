@@ -106,10 +106,7 @@ const AuthModal = ({ isOpen, onClose }) => {
               fontSize: "1.75rem",
               fontWeight: "700",
               marginBottom: "0.5rem",
-              background: "var(--accent-gradient)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
+              color: "var(--text-primary)",
             }}
           >
             {isLogin ? "Welcome Back" : "Create Account"}
@@ -258,14 +255,24 @@ const AuthModal = ({ isOpen, onClose }) => {
           <button
             type="submit"
             disabled={loading}
-            className="btn btn-primary"
             style={{
               width: "100%",
               padding: "0.875rem",
               fontSize: "1rem",
               fontWeight: "600",
-              opacity: loading ? 0.7 : 1,
+              background: "white",
+              color: "black",
+              border: "none",
+              borderRadius: "var(--radius-md)",
               cursor: loading ? "not-allowed" : "pointer",
+              opacity: loading ? 0.7 : 1,
+              transition: "all 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              if (!loading) e.target.style.opacity = "0.9";
+            }}
+            onMouseLeave={(e) => {
+              if (!loading) e.target.style.opacity = "1";
             }}
           >
             {loading ? "Please wait..." : isLogin ? "Sign In" : "Sign Up"}
@@ -291,7 +298,7 @@ const AuthModal = ({ isOpen, onClose }) => {
               style={{
                 background: "transparent",
                 border: "none",
-                color: "var(--accent-primary)",
+                color: "var(--accent-secondary)",
                 cursor: "pointer",
                 fontWeight: "600",
                 fontSize: "0.875rem",

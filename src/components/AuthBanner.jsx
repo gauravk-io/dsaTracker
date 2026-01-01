@@ -4,6 +4,7 @@ const AuthBanner = ({ onSignUpClick }) => {
   return (
     <div
       style={{
+        backgroundColor: "#0B132B",
         padding: "0.75rem 1rem",
         position: "relative",
       }}

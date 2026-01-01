@@ -46,10 +46,10 @@ const AuthModal = ({ isOpen, onClose }) => {
         }
         const { error } = await signUp(email, password);
         if (error) throw error;
-        setMessage("Check your email for the confirmation link!");
+        setMessage("Account created successfully! Welcome!");
         setTimeout(() => {
           onClose();
-        }, 2000);
+        }, 1500);
       }
     } catch (error) {
       setError(error.message);

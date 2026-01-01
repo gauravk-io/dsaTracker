@@ -312,7 +312,17 @@ function App() {
 
             {user ? (
               <button
-                onClick={signOut}
+                onClick={async () => {
+                  try {
+                    const { error } = await signOut();
+                    if (!error) {
+                      window.location.reload();
+                    }
+                  } catch (err) {
+                    console.error("Sign out error:", err);
+                    window.location.reload();
+                  }
+                }}
                 style={{
                   background: "transparent",
                   border: "none",

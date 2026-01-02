@@ -42,9 +42,7 @@ function App() {
   }, [isMuted]);
 
   // State for expanded groups
-  const [expandedPatterns, setExpandedPatterns] = useState(() => {
-    return [...new Set(problemData.map((p) => p.pattern))];
-  });
+  const [expandedPatterns, setExpandedPatterns] = useState(() => []);
 
   const toggleGroup = (pattern) => {
     setExpandedPatterns((prev) =>
